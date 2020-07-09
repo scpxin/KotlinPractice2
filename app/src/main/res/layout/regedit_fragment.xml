@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/regedit2"
+tools:context=".Fragment.Regedit.RegeditFragment">
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.1" />
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline6"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.8" />
+
+<EditText
+    android:id="@+id/regedit_institute"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/regedit_instituteTip"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_password"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline8"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_phone" />
+
+<EditText
+    android:id="@+id/regedit_truename"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/regedit_truenameTip"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_sex"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline8"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_no" />
+
+<EditText
+    android:id="@+id/regedit_sex"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/regedit_sexTip"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_phone"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline8"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_truename" />
+
+<EditText
+    android:id="@+id/regedit_phone"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/regedit_phoneTip"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_institute"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline8"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_sex" />
+
+<EditText
+    android:id="@+id/regedit_password"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/regedit_passwordTip"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/guideline6"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline8"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_institute" />
+
+<TextView
+    android:id="@+id/regedit_truenameText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regedit_truename"
+    android:textSize="25sp"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_sexText"
+    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_noText" />
+
+<TextView
+    android:id="@+id/regedit_sexText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regedit_sex"
+    android:textSize="25sp"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_phoneText"
+    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_truenameText" />
+
+<TextView
+    android:id="@+id/regedit_phoneText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regedit_phone"
+    android:textSize="25sp"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_instituteText"
+    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_sexText" />
+
+<TextView
+    android:id="@+id/regedit_instituteText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regedit_institute"
+    android:textSize="25sp"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_passwordText"
+    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_phoneText" />
+
+<TextView
+    android:id="@+id/regedit_passwordText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regedit_password"
+    android:textSize="25sp"
+    app:layout_constraintBottom_toTopOf="@+id/guideline6"
+    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/regedit_instituteText" />
+
+<EditText
+    android:id="@+id/regedit_no"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:hint="@string/regedit_noTip"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_truename"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/guideline8"
+    app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+<TextView
+    android:id="@+id/regedit_noText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regedit_no"
+    android:textSize="25sp"
+    app:layout_constraintBottom_toTopOf="@+id/regedit_truenameText"
+    app:layout_constraintEnd_toStartOf="@+id/guideline8"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/guideline8"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.31" />
+
+    <Button
+    android:id="@+id/regedit_regeditbtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/regedit_regeditbtn"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

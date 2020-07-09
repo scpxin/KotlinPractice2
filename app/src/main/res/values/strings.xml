@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">KotlinPractice</string>
+    <string name="login_loginbtn">登录</string>
+    <string name="login_regedit">注册</string>
+    <string name="login_forget">忘记密码</string>
+
+    <string name="login_mobileTip">请输入电话号码</string>
+    <string name="login_passwordTip">请输入密码</string>
+
+    <string name="regedit_noTip">请输入学号</string>
+    <string name="regedit_truenameTip">请输入姓名</string>
+    <string name="regedit_sexTip">请输入性别</string>
+    <string name="regedit_phoneTip">请输入电话号码</string>
+    <string name="regedit_instituteTip">请输入你所属学院</string>
+    <string name="regedit_passwordTip">请输入密码</string>
+
+    <string name="regedit_no">学号:</string>
+    <string name="regedit_truename">姓名:</string>
+    <string name="regedit_sex">性别:</string>
+    <string name="regedit_phone">电话号码:</string>
+    <string name="regedit_institute">学院:</string>
+    <string name="regedit_password">密码:</string>
+    <string name="title_activity_regedit1">RegeditActivity1</string>
+
+    <string name="regedit_backbtn">返回到登录页面</string>
+    <string name="regedit_regeditbtn">注册</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_first">书城</string>
+    <string name="menu_second">查询</string>
+    <string name="menu_third">续借</string>
+    <string name="menu_fourth">个人中心</string>
+    <string name="fourth_title">个人中心</string>
+    <string name="third_text_title"></string>
+    <string name="third_title"><![CDATA[当前图书馆在借&续借]]></string>
+</resources>
