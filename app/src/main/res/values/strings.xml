@@ -33,4 +33,9 @@
     <string name="fourth_title">个人中心</string>
     <string name="third_text_title"></string>
     <string name="third_title"><![CDATA[当前图书馆在借&续借]]></string>
+
+    <string name="message_layout_title">消息</string>
+    <string name="museum_layout_title">博物馆</string>
+    <string name="search_layout_title">查询</string>
+    <string name="person_layout_title">个人</string>
 </resources>

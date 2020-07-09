@@ -1,14 +1,14 @@
 package com.example.kotlinpractice.Fragment.Login
 
-import androidx.lifecycle.ViewModelProviders
+
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModelProviders
 import com.example.kotlinpractice.R
-import com.example.kotlinpractice.databinding.ActivityLoginBinding
-import com.example.kotlinpractice.databinding.LoginFragmentBinding
+
 
 class LoginFragment : Fragment() {
 
@@ -17,13 +17,13 @@ class LoginFragment : Fragment() {
     }
 
     private lateinit var viewModel: LoginViewModel
-    private lateinit var binding: LoginFragmentBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = LoginFragmentBinding.inflate(layoutInflater)
-        return binding.root
+
+        return inflater.inflate(R.layout.login_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -34,8 +34,7 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.loginBtnLogin.setText("ddd")
-        binding.loginMobile.setText("dd")
+
     }
 
 }

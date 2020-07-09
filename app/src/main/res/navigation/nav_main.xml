@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/messageFragment">
+
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.example.kotlinpractice.Fragment.MessageFragment"
+        android:label="@string/message_layout_title"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/museumFragment"
+        android:name="com.example.kotlinpractice.Fragment.MuseumFragment"
+        android:label="@string/museum_layout_title"
+        tools:layout="@layout/fragment_museum" />
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.example.kotlinpractice.Fragment.PersonFragment"
+        android:label="@string/person_layout_title"
+        tools:layout="@layout/fragment_person" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.kotlinpractice.Fragment.SearchFragment"
+        android:label="@string/search_layout_title"
+        tools:layout="@layout/fragment_search" />
+</navigation>
